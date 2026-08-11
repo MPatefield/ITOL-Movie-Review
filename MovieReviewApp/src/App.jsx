@@ -1,6 +1,8 @@
 import './App.css'
-import Header from './assets/components/Header.jsx'
-import Footer from './assets/components/Footer.jsx'
+import Header from './assets/components/Header/Header.jsx'
+import Footer from './assets/components/Footer/Footer.jsx'
+import Movies from './assets/components/Movies/Movies.jsx'
+
 
 function App() {
 
@@ -9,13 +11,13 @@ function App() {
     <>
       <div className="app">
 
-        <Header/>
-
+        <Header />
+        
         <main>
-          Main Content
+          <Movies />
         </main>
 
-        <Footer/>
+        <Footer />
 
       </div>
     </>
