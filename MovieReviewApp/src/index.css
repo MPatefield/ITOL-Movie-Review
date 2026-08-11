@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./assets/fonts/Montserrat-VariableFont_wght.woff2) format(woff2);
+}
+
+:root {
+  --color-bg: #0F172A;
+  --color-panel: #1E293B;
+  --color-text: #F1F5F9;
+  --color-gold: #D4AF37;
+  --color-red: #8B1E2F;
+}
+
+*{
+    font-family: 'Montserrat';
+}
+
+body{
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+
+

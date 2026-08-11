@@ -1,0 +1,43 @@
+header {
+    background-color: var(--color-panel);
+}
+
+header a {
+    color: var(--color-gold);
+}
+
+header a:hover {
+    color: var(--color-red)
+}
+
+header nav {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+}
+
+footer {
+    background-color: var(--color-panel);
+}
+
+footer a {
+    color: var(--color-gold);
+}
+
+footer a:hover {
+    color: var(--color-red)
+}
+
+footer nav {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+}
+
+@media (max-width: 654px) {
+    header nav, footer nav {
+        flex-wrap: wrap;
+        gap: 4px;
+
+    }
+}
