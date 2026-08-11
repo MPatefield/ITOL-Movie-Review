@@ -5,13 +5,16 @@ const Footer = ()=> {
 
     return (
         <footer>
-            <p>Movie.Review 2026 &copy; All Rights Reserved</p>
             <nav>
+                <p>Movie.Review 2026 &copy; All Rights Reserved</p>
+                <div className="footer-links">
                 <a href="#">Privacy</a>
+                <a> | </a>
                 <a href="#">Contact us</a>
+                <a> | </a>
                 <a href="#">Terms & Conditions</a>
+                </div>
             </nav>
-
         </footer>
     )
 }

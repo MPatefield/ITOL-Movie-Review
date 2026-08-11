@@ -1,16 +1,20 @@
 import React from 'react'
 import './headerFooter.css'
 
-const Header = ()=> {
+const Header = () => {
 
     return (
         <header>
-        <h1>Movie.Review</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Movies</a>
-            <a href="#">About</a>
-        </nav>
+            <nav>
+                <h1 className="logo">Movie.Review</h1>
+                <div className="header-links">
+                    <a href="#">Top Rated</a>
+                    <a> | </a>
+                    <a href="#">Recent Releases</a>
+                    <a> | </a>
+                    <a href="#">On Fire!</a>
+                </div>
+            </nav>
         </header>
     )
 }

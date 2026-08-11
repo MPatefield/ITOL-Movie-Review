@@ -1,38 +1,34 @@
-header {
+header, footer {
     background-color: var(--color-panel);
 }
 
-header a {
+header a, footer a {
     color: var(--color-gold);
 }
 
-header a:hover {
+header a:hover, footer a:hover {
     color: var(--color-red)
 }
 
-header nav {
+header nav, footer nav {
     display: flex;
     gap: 7px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-footer {
-    background-color: var(--color-panel);
-}
-
-footer a {
-    color: var(--color-gold);
-}
-
-footer a:hover {
-    color: var(--color-red)
-}
-
-footer nav {
+.header-links{
+    align-items: center;
     display: flex;
     gap: 7px;
-    justify-content: center;
 }
+
+.footer-links{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+
 
 @media (max-width: 654px) {
     header nav, footer nav {
