@@ -21,10 +21,7 @@
  cursor: pointer;   
 }
 
-.center-ele{
-    display: flex;
-    align-items: center;
-}
+
 
 .movie-sorting{
     border: none;
@@ -34,4 +31,10 @@
     height: 30px;
     padding:0 5px;
     margin: 0 12px;
+}
+
+.movie-shows{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

@@ -20,5 +20,10 @@ body{
     color: var(--color-text);
 }
 
+.center-ele{
+    display: flex;
+    align-items: center;
+}
+
 
 

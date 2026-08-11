@@ -1,5 +1,6 @@
 import React from 'react'
 import './Movies.css'
+import WatchMovies from './WatchMovies'
 
 const Movies = () => {
 
@@ -9,9 +10,9 @@ const Movies = () => {
                 <h2 className="center-ele movie-h2">Popular</h2>
                 <div className="center-ele movie-list">
                     <ul className="center-ele movie-filter">
-                        <li className="movie-filter-item">U</li>
-                        <li className="movie-filter-item">PG</li>
-                        <li className="movie-filter-item">12a</li>
+                        <li className="movie-filter-item">8+</li>
+                        <li className="movie-filter-item">9+</li>
+                        <li className="movie-filter-item">10</li>
                     </ul>
                     <select name="" id="" className="movie-sorting">
                         <option value="">Sort by</option>
@@ -25,6 +26,10 @@ const Movies = () => {
                     </select>
                 </div>
             </header>
+
+            <div className="movies-shows">
+                <WatchMovies/>
+            </div>
 
         </section>
     )

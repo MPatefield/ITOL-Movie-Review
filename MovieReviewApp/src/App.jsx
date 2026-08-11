@@ -12,12 +12,10 @@ function App() {
       <div className="app">
 
         <Header />
-        
+
         <main>
           <Movies />
         </main>
-
-        <Footer />
 
       </div>
     </>
