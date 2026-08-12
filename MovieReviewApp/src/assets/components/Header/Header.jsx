@@ -6,7 +6,10 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <h1 className="logo">Movie.Review</h1>
+                <h1 className="logo">
+                <span className="logo-main">Movie</span>
+                <span className="logo-accent">.Review</span>
+                </h1>
                 <div className="header-links">
                     <a href="#">Top Rated</a>
                     <a> | </a>

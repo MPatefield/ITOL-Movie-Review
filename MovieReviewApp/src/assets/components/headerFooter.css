@@ -28,6 +28,21 @@ header nav, footer nav {
     align-items: center;
 }
 
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.logo-main {
+    color: var(--color-text);
+}
+
+.logo-accent {
+    color: var(--color-gold);
+}
+
 
 
 @media (max-width: 654px) {

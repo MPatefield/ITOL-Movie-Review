@@ -7,7 +7,11 @@
     color: #fff;
     position: relative;
     display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
+.movie-show:hover {
+    transform: scale(1.03);
 }
 
 .movie-img{
@@ -24,6 +28,7 @@
     display: flex;
     justify-content: end;
     flex-direction: column;
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0) 60%)
 }
 
 .movie-date{
@@ -32,4 +37,9 @@
     font-weight: 700;
     margin: 7px 0px;
     color: #fff;
+}
+
+.movie-date p:last-child {
+    color: var(--color-gold);
+    font-weight: bold;
 }

@@ -6,8 +6,8 @@ import moviePic from './odyssey.webp'
 const WatchMovies = () => {
 
     return (
-        <a href="" className="movie-show">
-            <img src={moviePic} className="movie-img" alt="movie details" />
+        <a href="#" className="movie-show">
+            <img src={moviePic} className="movie-img" alt="The Odyssey Poster" />
             <div className="movie_details">
                 <h3 className="movie-title">The Odyssey</h3>
                 <div className="movie-date">
