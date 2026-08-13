@@ -17,6 +17,8 @@ function App() {
           <Movies />
         </main>
 
+        <Footer/>
+
       </div>
     </>
   )

@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Movies.css'
 import WatchMovies from './WatchMovies'
+import { useEffect } from 'react'
+
 
 const Movies = () => {
+
+    const [movies,setMovies] = useState([])
+
+    const apiKey = import.meta.env.VITE_API_KEY;
+
+    const fetchMovies = async () => {
+        const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`)
+        const data = await response.json()
+        console.log(data)
+        setMovies(data.results)
+    };
+
+    useEffect(() => {
+        fetchMovies();
+    }, [])
 
     return (
         <section className="movie-list">
@@ -22,13 +39,13 @@ const Movies = () => {
                     <select name="" id="" className="movie-sorting">
                         <option value="">Ascending</option>
                         <option value="">Descending</option>
-                        <option value=""></option>
                     </select>
                 </div>
             </header>
 
             <div className="movies-shows">
-                <WatchMovies/>
+                {movies.map((movie) => (
+                    <WatchMovies key={movie.id} movie={movie}/>))} 
             </div>
 
         </section>
