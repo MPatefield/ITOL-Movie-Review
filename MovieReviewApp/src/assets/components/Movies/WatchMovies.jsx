@@ -12,7 +12,7 @@ const WatchMovies = ({movie}) => {
                 <h3 className="movie-title">{movie.original_title}</h3>
                 <div className="movie-date">
                     <p>{movie.release_date}</p>
-                    <p>{movie.vote_average}</p>
+                    <p>{movie.vote_average.toFixed(1)}</p>
                 </div>
                 <p className="moviedesc">{movie.overview.slice(0,100) + "..."}</p>
             </div>

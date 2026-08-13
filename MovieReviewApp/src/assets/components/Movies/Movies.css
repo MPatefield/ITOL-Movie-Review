@@ -38,3 +38,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.active {
+    color: var(--color-gold);
+}
