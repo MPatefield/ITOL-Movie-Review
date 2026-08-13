@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Movies.css'
 import WatchMovies from './WatchMovies'
 import { useEffect } from 'react'
+import FilterMovies from './FilterMovies'
 
 
 const Movies = () => {
@@ -39,11 +40,7 @@ const Movies = () => {
             <header className="movie-header">
                 <h2 className="center-ele movie-h2">Popular</h2>
                 <div className="center-ele movie-list">
-                    <ul className="center-ele movie-filter">
-                        <li className={selectRating === 6 ? "movie-filter-item active" : "movie-filter-item"} onClick={() => handleFilter(6)}>6+</li>
-                        <li className={selectRating === 7 ? "movie-filter-item active" : "movie-filter-item"} onClick={() => handleFilter(7)}>7+</li>
-                        <li className={selectRating === 8 ? "movie-filter-item active" : "movie-filter-item"} onClick={() => handleFilter(8)}>8+</li>
-                    </ul>
+                    <FilterMovies handleFilter={handleFilter} selectRating={selectRating} ratings={[5,6,7,8,9,10]}/>
                     <select name="" id="" className="movie-sorting">
                         <option value="">Sort by</option>
                         <option value="date">Date</option>
